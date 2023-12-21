@@ -5,21 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Embedding with Tableau! 😍</title>
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <h1>Back To School Embedding 🍻</h1>
     <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
 
-    <!-- Buttons -->
-    <button id="exportPdf">Export To PDF</button>
-    <button id="exportPpt">Export To Powerpoint</button>
 
-    <h2>filters</h2>
-    <input type="number" placeholder="Min Value" id="minValue" />
-    <input type="number" placeholder="Max Value" id="maxValue" />
-    <button id="FilterButton">Filter!</button>
+    <div>
+        <!-- Buttons -->
+        <button id="exportPdf">Export To PDF</button>
+        <button id="exportPpt">Export To Powerpoint</button>
+    </div>
+
+    <div>
+        <h2>filters</h2>
+        <input type="number" placeholder="Min Value" id="minValue" />
+        <input type="number" placeholder="Max Value" id="maxValue" />
+        <button id="FilterButton">Filter!</button>
+    </div>
 
     <!-- This is our empty container  -->
     <div id="vizContainer"></div>
